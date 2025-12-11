@@ -1,0 +1,5 @@
+{
+  "name": "RS Induk AI Operations",
+  "description": "A comprehensive Hospital Operations AI Agent system designed for Accounting Information Systems analysis. Features an Orchestrator that routes requests to specialized sub-agents: Patient Management, Appointments, Medical Records, and Billing & Insurance.",
+  "requestFramePermissions": []
+}
