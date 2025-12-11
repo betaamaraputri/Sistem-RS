@@ -3,10 +3,8 @@ import { AgentRole, Message } from './types';
 import { AGENTS } from './constants';
 import { routeRequest, generateAgentResponse } from './services/geminiService';
 import AgentVisualizer from './components/AgentVisualizer';
-import { marked } from 'marked'; // We will use a simple renderer function instead of library to avoid complex deps if possible, but standard text is fine.
 
-// Simple markdown formatter since we cannot install 'marked' easily without package.json in this context
-// We will simply render text with line breaks.
+// Simple text formatter
 const FormattedText = ({ text }: { text: string }) => {
   return (
     <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap font-sans">
